@@ -48,7 +48,8 @@ This website is compatible with all modern web browsers including:
 
 ### Screenshot
 
-<img width="807" height="556" alt="image" src="https://github.com/user-attachments/assets/634bf3dc-961c-4bc0-8174-96b9275f9c46" />
+<img width="792" height="748" alt="image" src="https://github.com/user-attachments/assets/2f50961a-f7e3-473c-845f-794dc2d7b22e" />
+
 
 ## Contact
 
