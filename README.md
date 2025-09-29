@@ -48,6 +48,18 @@ This website is compatible with all modern web browsers including:
 - Safari
 - Edge
 
+## Updates
+
+- Added Interactive Map for users.
+- Added different hikeing routes.
+- Different difficulties and distances.
+- Sticky nav bar at the top for users.
+- Volunteer Details.
+- Volunteer forum.
+- Allow user to message the website.
+- FAQs for users to have some questions answered.
+- Updated ReadME
+
 ## Git Repo
 
 https://github.com/ST10497519/ST10497519-EcoTrail
