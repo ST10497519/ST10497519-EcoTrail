@@ -5,7 +5,8 @@
   font-family: "Arial", sans-serif;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
 }
@@ -56,7 +57,7 @@ header nav {
   font-size: 1rem;
   opacity: 0.9;
   text-align: center;
-  color: #FFFFFF
+  color: #ffffff;
 }
 
 .top-btn {
@@ -77,25 +78,31 @@ nav a:last-child {
 }
 
 .top-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: #ffffff4d;
 }
 
 /* Contact Button */
 .contact-btn {
-  position: absolute;
+  position: fixed;
   top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  writing-mode: vertical-rl;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 0.8rem;
-  border-radius: 10px 0 0 10px;
-  cursor: pointer;
-  transition: background 0.3s;
+  right: 15px;
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: right center;
+
+  background-color: #ffffff4d;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+
+  transition: all 0.3s ease;
 }
 
 .contact-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background-color: #ffffff4d;
+  padding-right: 30px;
 }
 
 /* Expanding Pane */
@@ -172,7 +179,7 @@ nav a:last-child {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .logo-container {
     position: relative;
     left: auto;
@@ -180,12 +187,12 @@ nav a:last-child {
     order: -1;
     margin-bottom: 1rem;
   }
-  
-  nav a:first-child, 
+
+  nav a:first-child,
   nav a:last-child {
     margin: 0;
   }
-  
+
   .contact-btn {
     display: none;
   }
