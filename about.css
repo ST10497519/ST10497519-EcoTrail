@@ -82,3 +82,10 @@
   padding: 1rem;
   color: #fff;
 }
+
+.contact-page header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,0.5);
+}

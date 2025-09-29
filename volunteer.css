@@ -1,0 +1,100 @@
+/* Volunteer Page */
+.volunteer-page {
+  background: url("images/volunteer.png") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Navigation */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+}
+
+header nav .logo {
+  height: 80px;
+  width: auto;
+}
+
+header nav .nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+header nav .nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Main content card */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.content-card {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+.content-card h1 {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+.content-card h2 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.content-card h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Styled button link */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
+  background: #4caf50;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #45a049;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+.volunteer-page header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,0.5);
+}
