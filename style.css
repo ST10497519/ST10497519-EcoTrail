@@ -23,7 +23,8 @@ html {
 }
 
 header {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
+  background: transparent;
 }
 
 header nav {
@@ -32,7 +33,7 @@ header nav {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;
+  padding: 0 2rem;
 }
 
 .logo-container {
@@ -69,14 +70,6 @@ header nav {
   transition: 0.3s;
 }
 
-nav a:first-child {
-  margin-right: auto;
-}
-
-nav a:last-child {
-  margin-left: auto;
-}
-
 .top-btn:hover {
   background: #ffffff4d;
 }
@@ -88,7 +81,6 @@ nav a:last-child {
   right: 15px;
   transform: translateY(-50%) rotate(90deg);
   transform-origin: right center;
-
   background-color: #ffffff4d;
   color: white;
   padding: 10px 20px;
@@ -96,7 +88,6 @@ nav a:last-child {
   font-weight: bold;
   border-radius: 8px 0 0 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-
   transition: all 0.3s ease;
 }
 
@@ -114,6 +105,7 @@ nav a:last-child {
   text-decoration: none;
   color: inherit;
 }
+
 .expand-pane {
   background: rgba(54, 60, 16, 0.35);
   border-radius: 20px 20px 0 0;
@@ -175,7 +167,6 @@ nav a:last-child {
 
 @media (max-width: 768px) {
   header nav {
-    padding: 1rem;
     flex-direction: column;
     gap: 1rem;
   }
@@ -188,11 +179,6 @@ nav a:last-child {
     margin-bottom: 1rem;
   }
 
-  nav a:first-child,
-  nav a:last-child {
-    margin: 0;
-  }
-
   .contact-btn {
     display: none;
   }
@@ -200,4 +186,64 @@ nav a:last-child {
   .pane-header h2 {
     font-size: 1.5rem;
   }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+/* left, center, right containers */
+.nav-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.nav-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* dropdowns */
+select {
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-left img {
+  display: block;
+  max-height: 70px;
+  height: auto;
+}
+
+.hikes header {
+  padding: 0.5rem 0;
+}
+.hikes header nav {
+  padding: 0 1rem;
+}
+.hikes header .nav-left img {
+  max-height: 84px;
 }
