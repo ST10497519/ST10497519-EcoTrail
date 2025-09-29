@@ -1,91 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EcoTrail</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body background="images/home.png" bgproperties="fixed" style="background-size: cover;">
-  <!-- Header -->
-  <header>
-    <nav>
-      <table width="100%">
-        <tr>
-          <td width="33%" align="center"><a href="about.html">About</a></td>
-          <td width="33%" align="center">
-            <img src="images/LOGO.jpeg" alt="EcoTrail Logo" width="150"><br>
-            <font color="#AEB685">Explore new hiking trails and nature views that you can remember forever.
-            <br> <strong>Don't leave your friends behind,</strong> let them enjoy all of the wonders that are available to us.</br></font>
-          </td>
-          <td width="33%" align="center"><a href="volunteer.html">Volunteer</a></td>
-        </tr>
-      </table>
-    </nav>
-  </header>
 
+<body>
   <!-- Background Image -->
-  <div bgcolor="#6a7945" height="70%">
-    <br><br><br><br><br><br><br><br><br><br>
-    <center>
-      <!-- Side Contact Button -->
-    <a href="contact.html">
-      <table>
-        <tr>
-          <td valign="middle">
-            <table bgcolor="rgba(0, 0, 0, 0.4)" cellpadding="8">
-              <tr>
-                <td><font color="white">C</font></td>
-              </tr>
-              <tr>
-                <td><font color="white">O</font></td>
-              </tr>
-              <tr>
-                <td><font color="white">N</font></td>
-              </tr>
-              <tr>
-                <td><font color="white">T</font></td>
-              </tr>
-              <tr>
-                <td><font color="white">A</font></td>
-              </tr>
-              <tr>
-                <td><font color="white">C</font></td>
-              </tr>
-              <tr>
-                <td><font color="white">T</font></td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </center>
+  <div class="hero">
+    <!-- Header -->
+    <header>
+      <nav>
+        <a href="about.html" class="top-btn">About</a>
+        <div class="logo-container">
+          <img src="images/logo.jpg" alt="EcoTrail Logo" class="logo">
+          <p class="small-description">Explore new hiking trails and nature views that you can remember forever.
+            <br> Don't leave your friends behind, let them enjoy all of the wonders that are available to us.</br></p>
+        </div>
+        <a href="volunteer.html" class="top-btn">Volunteer</a>
+      </nav>
+    </header>
+
+    <!-- Side Contact Button -->
+    <div class="contact-btn">
+      CONTACT
+    </div>
+
+    <!-- Single Expanding Pane -->
+     <a href="hiking.html" class="expand-pane-link">
+    <section class="expand-pane" id="trail-pane">
+      <div class="pane-header" id="pane-header">
+        <h2>Explore Hiking Trails ▼</h2>
+      </div>
+      <div class="pane-content">
+        <p>Discover breathtaking hiking paths, guided routes, and tips for your next adventure in nature.</p>
+        <ul>
+          <li>Table Mountain</li>
+          <li>Singal Hill</li>
+          <li>Lions Head</li>
+        </ul>
+      </div>
+    </section>
   </div>
 
-  <!-- Bottom Pane as Button to Hiking Page -->
-  <div align="center">
-    <a href="hiking.html">
-      <table width="100%" bgcolor="rgba(54, 60, 16, 0.35)" cellpadding="15">
-        <tr>
-          <td align="center">
-            <font size="5" color="white"><b>Explore Hiking Trails</b></font>
-          </td>
-        </tr>
-        <tr>
-          <td align="center">
-            <font color="white">Discover breathtaking hiking paths, guided routes, and tips for your next adventure in nature.</font>
-            <br><br>
-            <ul align="left">
-              <li>Table Mountain</li>
-              <li>Lions Head</li>
-              <li>Signal Hill</li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-    </a>
-  </div>
-  <footer>
-        <p>&copy; 2025 EcoTrail. All rights reserved.</p>
-    </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>
